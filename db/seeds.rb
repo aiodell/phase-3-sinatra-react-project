@@ -1,5 +1,10 @@
 puts "🌱 Seeding spices..."
 
-# Seed your database here
+# Fox seed
+
+
+
+# Sponsor seed
+
 
 puts "✅ Done seeding!"
