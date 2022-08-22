@@ -1,3 +1,5 @@
+# Andrianna Odell, Kelly Duran, Josephine Luu
+
 # Phase 3 Project Guidelines
 
 ## Learning Goals
