@@ -16,7 +16,7 @@ class FoxesController < ApplicationController
     #delete a fox
     # delete '/foxes/:id' do
     #     foxy = Fox.find(params[:id])
-    #     foxy.destory
+    #     foxy.destroy
     #     foxy.to_json
     # end
 

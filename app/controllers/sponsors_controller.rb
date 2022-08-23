@@ -7,10 +7,9 @@ class SponsorsController < ApplicationController
         sponsors.to_json
     end
 
-    # get sponsors
+    # get sponsor by ID
     get '/sponsors/:id' do
         sponsor = Sponsor.find(params[:id])
         sponsor.to_json
     end
-    
 end
