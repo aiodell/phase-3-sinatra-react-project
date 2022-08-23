@@ -13,11 +13,11 @@ class FoxesController < ApplicationController
         foxy.to_json
     end
 
-    #delete a fox
-    # delete '/foxes/:id' do
-    #     foxy = Fox.find(params[:id])
-    #     foxy.destroy
-    #     foxy.to_json
-    # end
+    delete a fox
+    delete '/foxes/:id' do
+        foxy = Fox.find(params[:id])
+        foxy.destroy
+        foxy.to_json
+    end
 
 end
