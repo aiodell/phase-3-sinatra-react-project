@@ -28,6 +28,7 @@ class SponsorsController < ApplicationController
             location: params[:location],
             num_of_foxes: params[:num_of_foxes]
         )
+        sponsorsss.to_json
     end
 
     #update a fox

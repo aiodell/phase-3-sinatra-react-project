@@ -22,15 +22,16 @@ class FoxesController < ApplicationController
 
     #create a fox 
     post '/foxes' do 
-        foxed = Fox.create(
+        foxes = Fox.create(
             name: params[:name],
             age: params[:age],
             favorite_toy: params[:favorite_toy],
             personality: params[:personality],
             image_url: params[:image_url],
-            sponsored: params[:sponsored],
-            sponsor_id: params[:sponsor_id]
+            sponsored: false,
+            sponsor_id: nil
         )
+        foxes.to_json
     end
 
     #update a fox
