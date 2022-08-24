@@ -38,13 +38,10 @@ class FoxesController < ApplicationController
     patch '/foxes/:id' do
         foxeys = Fox.find(params[:id])
         foxeys.update(
-            name: params[:name],
             age: params[:age],
             favorite_toy: params[:favorite_toy],
             personality: params[:personality],
             image_url: params[:image_url],
-            sponsored: params[:sponsored],
-            sponsor_id: params[:sponsor_id]
         )
         foxeys.to_json
     end
