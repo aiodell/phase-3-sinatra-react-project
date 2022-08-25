@@ -15,32 +15,28 @@ class SponsorsController < ApplicationController
 
     #delete a sponsor
       delete '/sponsors/:id' do
-        sponsorss = Sponsor.find(params[:id])
-        sponsorss.destroy
-        sponsorss.to_json
+        sponsors = Sponsor.find(params[:id])
+        sponsors.destroy
+        sponsors.to_json
     end
 
-    #create a fox 
+    #create a sponsor
     post '/sponsors' do 
-        sponsorsss = Sponsor.create(
+        sponsors = Sponsor.create(
             name: params[:name],
             image_url: params[:image_url],
             location: params[:location],
-            num_of_foxes: params[:num_of_foxes]
         )
-        sponsorsss.to_json
+        sponsors.to_json
     end
 
-    #update a fox
-    patch '/sponsors/:id' do
-        sponsorssss = Sponsor.find(params[:id])
-        sponsorssss = Sponsor.update(
-            name: params[:name],
-            image_url: params[:image_url],
-            location: params[:location],
-            num_of_foxes: params[:num_of_foxes]
-        )
-        sponsorssss.to_json
-    end
+    # #update a sponsor
+    # patch '/sponsors/:id' do
+    #     sponsors = Sponsor.find(params[:id])
+    #     sponsors = Sponsor.update(
+    #         num_of_foxes: fox_count
+    #     )
+    #     sponsors.to_json
+    # end
 
 end

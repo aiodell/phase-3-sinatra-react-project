@@ -34,7 +34,7 @@ class FoxesController < ApplicationController
         foxes.to_json
     end
 
-    #update a fox
+    # update a fox
     patch '/foxes/:id' do
         foxeys = Fox.find(params[:id])
         foxeys.update(
@@ -46,4 +46,12 @@ class FoxesController < ApplicationController
         foxeys.to_json
     end
 
+    # update the sponsor
+    patch '/foxes/:id' do
+        fox_sponsor = Fox.find(params[:id])
+        fox_sponsor.update(
+            sponsor_id: params[:sponsor_id].id
+        )
+    end
+    
 end
