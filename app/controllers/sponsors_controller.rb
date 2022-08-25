@@ -26,11 +26,12 @@ class SponsorsController < ApplicationController
             name: params[:name],
             image_url: params[:image_url],
             location: params[:location],
+            num_of_foxes: fox_count
         )
         sponsors.to_json
     end
 
-    # #update a sponsor
+    #update a sponsor
     # patch '/sponsors/:id' do
     #     sponsors = Sponsor.find(params[:id])
     #     sponsors = Sponsor.update(

@@ -42,16 +42,8 @@ class FoxesController < ApplicationController
             favorite_toy: params[:favorite_toy],
             personality: params[:personality],
             image_url: params[:image_url],
+            sponsor_id: params[:sponsor_id]
         )
         foxeys.to_json
     end
-
-    # update the sponsor
-    patch '/foxes/:id' do
-        fox_sponsor = Fox.find(params[:id])
-        fox_sponsor.update(
-            sponsor_id: params[:sponsor_id].id
-        )
-    end
-    
 end
