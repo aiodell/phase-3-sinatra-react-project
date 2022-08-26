@@ -28,7 +28,6 @@ class FoxesController < ApplicationController
             favorite_toy: params[:favorite_toy],
             personality: params[:personality],
             image_url: params[:image_url],
-            sponsored: false,
             sponsor_id: nil
         )
         foxes.to_json

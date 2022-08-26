@@ -8,7 +8,6 @@ puts "🌱 Seeding Sponsors..."
                     name: Faker::Name.name,
                     image_url: 'https://pbs.twimg.com/profile_images/1375531284114644993/Eud7AHJ5_400x400.jpg',
                     location: Faker::Address.state,
-                    num_of_foxes: 0
                   )
 end
 
@@ -42,8 +41,7 @@ puts "🌱 Seeding foxes..."
             favorite_toy: toy,
             personality: personality,
             image_url: fox_img,
-            sponsor_id: nil,
-            sponsored: false,
+            sponsor_id: rand(1..5),
             )
 end
 

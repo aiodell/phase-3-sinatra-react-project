@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_25_135042) do
+ActiveRecord::Schema.define(version: 2022_08_26_032435) do
 
   create_table "foxes", force: :cascade do |t|
     t.string "name"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2022_08_25_135042) do
     t.string "favorite_toy"
     t.string "personality"
     t.string "image_url"
-    t.boolean "sponsored"
     t.integer "sponsor_id"
   end
 
@@ -26,7 +25,6 @@ ActiveRecord::Schema.define(version: 2022_08_25_135042) do
     t.string "name"
     t.string "image_url"
     t.string "location"
-    t.integer "num_of_foxes"
   end
 
 end
