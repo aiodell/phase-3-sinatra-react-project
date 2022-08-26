@@ -1,16 +1,21 @@
 class SponsorsController < ApplicationController
     set :default_content_type, 'application/json'
 
+    @fox_sponsored_names
+    
+
     # get all sponsors
     get '/sponsors' do
         sponsors = Sponsor.all
         sponsors.to_json
     end
 
-    # get sponsor by ID
+     # find fox names associated with the sponsors
     get '/sponsors/:id' do
         sponsor = Sponsor.find(params[:id])
+        fox_names = sponsor.fox_sponsored_names
         sponsor.to_json
+        fox_names.to_json
     end
 
     #delete a sponsor
