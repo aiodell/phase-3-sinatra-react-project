@@ -8,16 +8,16 @@ class FoxesController < ApplicationController
     end
 
     #get all foxes by ID
-    get '/foxes/:id' do
-        fox = Fox.find(params[:id])
-        fox.to_json
+     get '/foxes/:id' do
+        foxy = Fox.find(params[:id])
+        foxy.to_json
     end
 
     #delete a fox
     delete '/foxes/:id' do
-        fox = Fox.find(params[:id])
-        fox.destroy
-        fox.to_json
+        foxie = Fox.find(params[:id])
+        foxie.destroy
+        foxie.to_json
     end
 
     #create a fox 
@@ -35,13 +35,9 @@ class FoxesController < ApplicationController
 
     # update a fox
     patch '/foxes/:id' do
-        fox = Fox.find(params[:id])
-        fox.update(
-            age: params[:age],
-            favorite_toy: params[:favorite_toy],
-            personality: params[:personality],
-            image_url: params[:image_url],
-            sponsor_id: params[:sponsor_id]
+        foxeys = Fox.find(params[:id])
+        foxeys.update(
+            age: params[:age]
         )
         foxeys.to_json
     end
