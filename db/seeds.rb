@@ -19,18 +19,18 @@ puts "🌱 Seeding foxes..."
 15.times do 
 
     fox_img = [
-        "https://randomfox.ca/images/103.jpg", "https://randomfox.ca/images/48.jpg", "https://randomfox.ca/images/28.jpg", "https://randomfox.ca/images/7.jpg",
-        "https://randomfox.ca/images/15.jpg","https://randomfox.ca/images/20.jpg","https://randomfox.ca/images/105.jpg","https://randomfox.ca/images/80.jpg",
-        "https://randomfox.ca/images/60.jpg","https://randomfox.ca/images/54.jpg","https://randomfox.ca/images/33.jpg","https://randomfox.ca/images/42.jpg",
-        "https://randomfox.ca/images/99.jpg", "https://randomfox.ca/images/17.jpg", "https://randomfox.ca/images/48.jpg", "https://randomfox.ca/images/1.jpg", 
-        "https://randomfox.ca/images/66.jpg", "https://randomfox.ca/images/111.jpg", "https://randomfox.ca/images/55.jpg","https://randomfox.ca/images/22.jpg",
+        "https://randomfox.ca/images/103.jpg", "https://randomfox.ca/images/104.jpg", "https://randomfox.ca/images/28.jpg", "https://randomfox.ca/images/7.jpg",
+        "https://randomfox.ca/images/15.jpg","https://randomfox.ca/images/20.jpg","https://randomfox.ca/images/105.jpg","https://randomfox.ca/images/9.jpg",
+        "https://randomfox.ca/images/60.jpg","https://randomfox.ca/images/59.jpg","https://randomfox.ca/images/33.jpg","https://randomfox.ca/images/42.jpg",
+        "https://randomfox.ca/images/99.jpg", "https://randomfox.ca/images/62.jpg", "https://randomfox.ca/images/21.jpg", "https://randomfox.ca/images/1.jpg", 
+        "https://randomfox.ca/images/66.jpg", "https://randomfox.ca/images/41.jpg", "https://randomfox.ca/images/55.jpg","https://randomfox.ca/images/22.jpg",
         "https://randomfox.ca/images/58.jpg","https://randomfox.ca/images/12.jpg","https://randomfox.ca/images/49.jpg","https://randomfox.ca/images/35.jpg",
-        "https://randomfox.ca/images/70.jpg","https://randomfox.ca/images/19.jpg","https://randomfox.ca/images/6.jpg"
+        "https://randomfox.ca/images/40.jpg","https://randomfox.ca/images/19.jpg","https://randomfox.ca/images/6.jpg", "https://randomfox.ca/images/14.jpg"
     ].sample
 
-    toy = ['beach ball', 'kiddie pools', 'tunnel', 'squeakers', 'tennis ball', 'puzzle feeder', 'sandbox'].sample
+    toy = ['Beach Ball', 'Kiddie Pool', 'Tunnel', 'Squeakers', 'Tennis Ball', 'Puzzle Feeder', 'Sandbox'].sample
 
-    personality = ['timid', 'irritable', 'overly-friendly', 'loving', 'talkative', 'high-energy', 'lazy', 'sassy', 'mischevious','observant', 'curious', 'needy'].sample
+    personality = ['Timid', 'Irritable', 'Overly-friendly', 'Loving', 'Talkative', 'High-energy', 'Lazy', 'Sassy', 'Mischevious','Observant', 'Curious', 'Needy'].sample
 
     age = ["1","2","3","4","5","6","7","8","9","10"].sample
     # seed fox
